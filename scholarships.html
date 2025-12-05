@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scholarships</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2>Student Yojana Hub</h2>
+    <a href="index.html">Home</a>
+</nav>
+
+<h1 class="page-title">All Scholarships</h1>
+
+<div class="filters">
+    <input type="text" id="search" placeholder="Search scholarship..." onkeyup="renderScholarships()">
+
+    <select id="filter-state" onchange="renderScholarships()">
+        <option value="">State</option>
+        <option value="All India">All India</option>
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        <option value="Telangana">Telangana</option>
+    </select>
+
+    <select id="filter-category" onchange="renderScholarships()">
+        <option value="">Category</option>
+        <option value="SC">SC</option>
+        <option value="ST">ST</option>
+        <option value="OBC">OBC</option>
+        <option value="General">General</option>
+        <option value="EWS">EWS</option>
+    </select>
+
+    <select id="filter-gender" onchange="renderScholarships()">
+        <option value="">Gender</option>
+        <option value="Any">Any</option>
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+    </select>
+</div>
+
+<div id="scholarship-list"></div>
+
+<!-- Popup -->
+<div id="popup">
+    <div id="popup-content">
+        <span id="close-popup" onclick="closePopup()">×</span>
+        <h2 id="p-title"></h2>
+        <p id="p-desc"></p>
+        <p><b>Eligibility:</b> <span id="p-eligibility"></span></p>
+        <p><b>State:</b> <span id="p-state"></span></p>
+        <p><b>Category:</b> <span id="p-category"></span></p>
+        <p><b>Gender:</b> <span id="p-gender"></span></p>
+        <p><b>Deadline:</b> <span id="p-deadline"></span></p>
+
+        <p><b>Documents Required:</b></p>
+        <ul id="p-docs"></ul>
+        <h1 class="page-title">All Scholarships</h1>
+        <button onclick="downloadCSV()" class="btn">Download Scholarship List</button>
+        <div id="scholarship-list"></div>
+
+        <button onclick="setReminder()">Remind Me</button>
+        <a id="p-link" href="#" target="_blank">Apply Now</a>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

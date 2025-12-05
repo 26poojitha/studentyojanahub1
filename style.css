@@ -1,0 +1,16 @@
+body { font-family: Arial; background: #f1f3f6; margin: 0; }
+nav { background: #0055aa; color: white; padding: 15px; display: flex; justify-content: space-between; }
+nav a { color: white; text-decoration: none; margin-left: 15px; }
+.hero { text-align: center; padding: 70px; background: linear-gradient(#0055aa, #0077dd); color: white; }
+.hero-buttons .btn { background: white; color: #0055aa; padding: 10px 20px; margin: 10px; text-decoration: none; border-radius: 5px; }
+.page-title { text-align: center; margin-top: 20px; }
+.filters { display: flex; justify-content: center; gap: 10px; margin: 15px; }
+.filters select, .filters input { padding: 8px; }
+.card { background: white; padding: 15px; margin: 10px auto; width: 80%; border-radius: 5px; cursor: pointer; box-shadow: 0 3px 6px #00000033; }
+#popup { display: none; position: fixed; inset: 0; background: #000000aa; justify-content: center; align-items: center; }
+#popup-content { background: white; padding: 20px; width: 60%; border-radius: 5px; }
+#popup ul { list-style: square; padding-left: 20px; }
+#popup button { padding: 8px; background: #ff6600; color: white; border: none; margin-top: 10px; cursor: pointer; border-radius: 5px; }
+#close-popup { float: right; cursor: pointer; font-size: 25px; }
+.form-box { width: 80%; margin: auto; display: grid; gap: 10px; }
+button { padding: 10px; background: #0055aa; color: white; border: none; }

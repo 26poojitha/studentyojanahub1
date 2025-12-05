@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommend Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2>Student Yojana Hub</h2>
+    <a href="index.html">Home</a>
+</nav>
+
+<h1 class="page-title">Get Personalized Scholarship Recommendations</h1>
+
+<div class="form-box">
+    <select id="r-gender">
+        <option value="">Gender</option>
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+        <option value="Any">Any</option>
+    </select>
+
+    <select id="r-category">
+        <option value="">Category</option>
+        <option value="SC">SC</option>
+        <option value="ST">ST</option>
+        <option value="OBC">OBC</option>
+        <option value="General">General</option>
+        <option value="EWS">EWS</option>
+    </select>
+
+    <select id="r-state">
+        <option value="">State</option>
+        <option value="All India">All India</option>
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        <option value="Telangana">Telangana</option>
+    </select>
+
+    <select id="r-qualification">
+        <option value="">Qualification</option>
+        <option value="UG">UG</option>
+        <option value="PG">PG</option>
+        <option value="10th">10th</option>
+        <option value="Inter">Inter</option>
+    </select>
+
+    <button onclick="recommend()">Get Recommendations</button>
+</div>
+
+<h2 class="page-title">Your Recommended Scholarships</h2>
+<div id="recommend-results"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
